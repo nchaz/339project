@@ -19,17 +19,17 @@ body {
 	text-decoration: none;
 }
 .nav_links li a:hover {
-	background-color: rgb(0, 20, 107);
+	background-color: rgb(1, 15, 80);
 	color: #ffffff;
 }
 .nav_links li a:active {
-	background: #b20606f1;
+	background: #921717f1;
 	color: #ffffff;
 }
 
 .nav_links li a.current{
 	color: #ffffff;
-	background:#b20606f1;
+	background: #921717f1;
  }
 
 .bluebox {
@@ -53,8 +53,8 @@ body {
 
 .headline {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	color: #b20606f1;
-	background-color: rgb(0, 20, 107);
+	color: #ff6060f1;
+	background-color: rgb(1, 15, 80);
 	font-size: 10px;
 	font-weight: bold;
 	text-align: center;
@@ -81,7 +81,7 @@ h1 {
 	font-weight: 800;
 	letter-spacing: 0.6px;
 	text-align: center;
-	color: rgb(0, 20, 107);
+	color: rgb(1, 15, 80);
 	padding: 10px 0px 10px 10px;
 }
 
@@ -92,7 +92,7 @@ h2 {
 	font-weight: 600;
 	letter-spacing: 0.3px;
 	text-align: center;
-	color: #b20606f1;
+	color: #ff6060f1;
 	padding: 10px 0px 10px 10px;
   }
 
