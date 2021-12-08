@@ -2,6 +2,11 @@ body {
 	background-color: rgb(246, 243, 244);
 }
 
+header{
+	display: flex;
+	flex-direction: column;
+}
+
 .nav_links{
     display: flex;
     flex-direction: column;
@@ -78,7 +83,7 @@ body {
 
 h1 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-size: 44px;
+	font-size: 36px;
 	font-weight: 800;
 	letter-spacing: 0.6px;
 	text-align: center;
@@ -100,7 +105,8 @@ h2 {
 
 #round {
 	font-size: 32px;
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	width: 100%;
 }  
 
 img {
@@ -157,13 +163,14 @@ img {
 .trivia {
 	display: grid;
 	width: 100%;
-    height: 1200px;
+	height: 1200px;
+	margin: auto;
 	grid-row: auto;
 	grid-template-columns: 200px 200px;
     grid-column-gap: 5px;
     grid-row-gap: 50px;
-	padding-right: 5px;
-	padding-bottom: 700px;
+	justify-items: center;
+	justify-content: space-around;
 }
 
 .flip-card {
@@ -260,11 +267,29 @@ img {
   }
 
 
-  @media screen and (min-width: 770px){
+
+
+
+
+
+
+
+  @media screen and (min-width: 750px){
+	
+	.title{
+		display: flex;
+	}
+
+	header{
+		flex-direction: row;
+    	align-items: center;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
 
 	.nav_links{
-		display: flex;
-		flex-direction: row;
+		flex-direction: column;
+    	align-items: flex-end;
 	}
 
     .box {
@@ -277,10 +302,9 @@ img {
 	.trivia {
 		height: 200px;
 		display: grid;
-		grid-template-columns: 200px 200px 200px 200px;
-		grid-row: auto auto auto auto;
-		grid-column-gap: 150px;
-		padding: 0px 0px 600px 90px;
+		grid-template-columns: 33% 33% 33%;
+		grid-row: auto auto auto;
+		padding-bottom: 700px;
 	}
 
 	.headline {
@@ -309,10 +333,10 @@ img {
 
 	.typewriter {
 		overflow: hidden; /* Ensures the content is not revealed until the animation */
-		  border-right: .1em solid #921717f1; /* The typwriter cursor */
-		  white-space: nowrap; /* Keeps the content on a single line */
-		  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-		  animation: 
+		border-right: .1em solid #921717f1; /* The typwriter cursor */
+		white-space: nowrap; /* Keeps the content on a single line */
+		/* margin: 0 auto; Gives that scrolling effect as the typing happens */
+		animation: 
 		typing 4s steps(40, end),
 		blink-caret .75s step-end infinite;
 	}
@@ -341,6 +365,17 @@ img {
 		font-size:1.2em;
 		z-index:999;
 	}
+	
+	.form{
+		width: 75%;
+		margin: auto;
+	}
+
+	.input{
+		padding: 10px;
+		margin: 2%;
+	}
+
 
 /* The typing effect */
 @keyframes typing {
@@ -356,3 +391,31 @@ img {
 
 }
 
+@media screen and (min-width: 1000px){
+
+	.nav_links{
+		display: flex;
+		flex-direction: row;
+	}
+
+	header{
+		display: inline;
+		align-items: center;
+	}
+
+	.class{
+		display: inline;
+	}
+
+	.title{
+		display: block;
+	}
+
+	.trivia {
+		height: 200px;
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-row: auto auto auto auto;
+		padding-bottom: 500px;
+	}
+}
