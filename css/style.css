@@ -232,7 +232,7 @@ img {
   .flip-card:focus-within .flip-card-inner,
   .flip-card:active .flip-card-inner,
   .flip-card:focus .flip-card-inner {
-	transform: rotateY(540deg);
+	transform: rotateY(180deg) rotateX(360deg);
   }
 
 .score {
